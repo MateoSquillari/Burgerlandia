@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Burgerlandia Cba</title>
+</head>
+<body>
+    <header>
+        <div id="principio" class="contenido primera-seccion">
+        <span id="navbar"></span>
+        <nav>
+            <ul>
+                <li><a href="#principio">BURGERLANDIA</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#pedido">Hacer pedido</a></li>
+                <li><a href="#sucursales">Sucursales</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <div class="titulo-principal">
+          <h1>El mundo de las<br>hamburguesas</h1>
+          <div class="botones-inicio">
+            <a href="" class="boton">Ver Menú</a>
+            <a href="#pedido" class="boton">Hacer pedido</a>
+        </div>
+      </div>     
+    </div>
+    </header>
+    
+    
+    <main>
+        <section>
+                <div id="destacados" class="segunda-seccion">
+                <p class="titulos">Productos Destacados</p>
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade a">
+
+                      <img src="imagenes/producto1.jpg" style="width:20%">
+                      <img src="imagenes/producto1.jpg" style="width:20%">
+                      <img src="imagenes/producto1.jpg" style="width:20%">
+                    </div>
+                    
+                    <div class="mySlides fade a">
+
+                      <img src="imagenes/producto2.jpg" style="width:20%">
+                      <img src="imagenes/producto2.jpg" style="width:20%">
+                      <img src="imagenes/producto2.jpg" style="width:20%">
+
+                    </div>
+                    
+                    <div class="mySlides fade a">
+
+                      <img src="imagenes/producto3.jpg" style="width:20%">
+                      <img src="imagenes/producto3.jpg" style="width:20%">
+                      <img src="imagenes/producto3.jpg" style="width:20%">
+
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    <a href="" class="boton">Ver Todos</a>
+                </div>
+
+        </section>
+
+        <section>
+            <div id="pedido" class="tercera-seccion">
+                <div class="tercera-1">
+                    <p>HACÉ TU<br>PEDIDO</p>
+                    <a href="" class="boton">Ir a WhatsApp</a>
+                </div>
+                <div class="tercera-2">
+                    <img src="imagenes/Pedir.jpg" alt="Persona Comiendo">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="sucursales" class="cuarta-seccion">
+                <p class="titulos">Sucursales</p>
+                <!-- The four columns -->
+                <div class="subtitulos"><p>Altolaguirre</p></div>
+                <div class="row">
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                </div>
+                
+                <div class="container">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <img id="expandedImg" style="width:100%">
+                  <div id="imgtext"></div>
+                </div>
+
+
+                <div class="subtitulos"><p>Alsina</p></div>
+                <div class="row">
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img src="imagenes/paisaje.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                  </div>
+                </div>
+                
+                <div class="container">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <img id="expandedImg" style="width:100%">
+                  <div id="imgtext"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+          <div id="nosotros" class="quinta-seccion">
+            <p class="titulos">Nosotros</p>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos, nisi voluptates vel saepe obcaecati suscipit error, exercitationem nam voluptas adipisci similique neque dolore enim ad tenetur sunt! Laudantium, adipisci?
+            Commodi in tempore neque delectus praesentium deleniti aut veritatis quia maxime quam alias labore molestias architecto soluta incidunt unde, assumenda cupiditate voluptas sequi, veniam vitae consectetur ea quasi. Incidunt, excepturi!
+            Tenetur, quaerat obcaecati voluptatem voluptatibus dolorum vitae vel dolore dignissimos ipsum odio minima error quas placeat ea repudiandae nostrum beatae voluptas saepe explicabo iure, quod maxime? Suscipit repellat nesciunt necessitatibus.
+            Excepturi asperiores dolores repellat! Corporis possimus nisi quae repudiandae perferendis quos est tempora blanditiis unde doloremque, cupiditate ipsa similique, minima accusantium voluptates dolores! Mollitia corrupti praesentium placeat est id impedit.
+            Numquam accusamus, tempore ducimus quisquam debitis odio autem perferendis illum doloremque repellat aliquid quam exercitationem iure? Cum totam debitis doloremque dolor nulla omnis, itaque vitae voluptates animi officiis.</p>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-seccion">
+      <div>
+        <ul>
+          <li><a href="index.html" class="menubajo">BURGERLANDIA</a></li>
+          <li><a href="menu.html" class="menubajo">Ver Menú</a></li>
+          <li><a href="" class="menubajo">Hacer pedido</a></li>
+          <li><a href="#sucursales" class="menubajo">Sucursales</a></li>
+          <li><a href="#nosotros" class="menubajo">Nosotros</a></li>
+      </ul>
+      </div>
+
+      <div class="medio">
+        <p class="medio-nombre">Burgerlandia</p>
+        <p class="medio-desarrollador">Sitio desarrollado por <a href="">Mateo Squillari</a></p>
+      </div>
+
+      <div class="abajo">
+        <div>
+          <p>Redes Sociales</p>
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+        </div>
+        <div>
+          <p>Contacto</p>
+          <a href="">351*******</a>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.backgroundColor = "rgb(0, 0, 0, 0.8)";
+  } else {
+    document.getElementById("navbar").style.backgroundColor = "rgb(255, 255, 255, 0)";
+  }
+}
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
+
+    </script>
+</body>
+</html>

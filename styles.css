@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    list-style:none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+header, section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------- PRIMERA SECCION ------------------- */
+
+#navbar{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    transition: 0.4s;
+    z-index: +1;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: +2;
+}
+
+nav ul, .atajos ul{ 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    border-bottom: solid 2px rgb(255, 255, 255, 0);
+}
+
+nav ul li:hover{
+    border-bottom: solid 2px rgb(255, 255, 255, 0.5);
+}
+
+nav ul li a{
+    padding: 5px 0;
+    color: white;
+}
+
+.botones-inicio{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.titulo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    color:white;
+    margin-top: 150px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 0 20px;
+}
+
+.titulo-principal h1{
+  font-size: 70px;
+  text-align: center;
+}
+
+.primera-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------------ SEGUNDA SECCION ------------------ */
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(209, 143, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(209, 143, 0);
+  color: white;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.a{
+    display: flex;
+    justify-content: space-around;
+}
+.a img{
+  border-radius: 20px;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.segunda-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.titulos{
+    font-size: 35px;
+    color: rgb(0,0,0);
+    margin-bottom: 30px;
+}
+
+.boton{
+  margin-top: 20px;
+  padding: 5px 10px; 
+  background-color: rgb(209, 143, 0);
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.boton:hover{
+  background-color: rgb(43, 43, 43);
+}
+
+/* ------------------- TERCERA SECCION ------------------- */
+
+.tercera-seccion{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 800px;
+  height: 100vh;
+}
+
+.tercera-1, .tercera-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tercera-1 p{
+  font-size: 80px;
+  text-align: left;
+  line-height: 60px;
+}
+
+.tercera-2 img{
+  width: 90%;
+}
+
+/* ------------------- CUARTA SECCION ------------------- */
+.cuarta-seccion{
+  margin-top: 60px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.subtitulos{
+  width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+
+/* ------------------- QUINTA SECCION ------------------- */
+
+.quinta-seccion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin-top: 60px;
+  height: 100vh;
+  justify-content: center;
+
+}
+
+.texto{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}
+
+
+/* ------------------- FOOTER ------------------- */
+
+footer{
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.footer-seccion{
+  margin: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1000px;
+/*   height: 300px; */
+}
+
+.footer-seccion div ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-seccion div ul li{
+  margin: 10px 0;
+}
+
+.menubajo{
+  color:white;
+  font-size: 15px;
+}
+
+.medio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.medio-nombre{
+  color: white;
+  font-size: 30px;
+}
+
+.medio-desarrollador{
+  margin-top: 20px;
+  color:white;
+  font-size: 13px;
+}
+
+.medio-desarrollador a{
+  color: rgb(85, 85, 255);
+  font-size: 13px;
+  border-bottom: solid 2px rgb(85, 85, 255);
+}
+
+.abajo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abajo div p{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.abajo div a{
+  color: rgb(85, 85, 255);
+  font-size: 13px;
+  border-bottom: solid 2px rgb(85, 85, 255);
+}
+
+
+/* ------------------- MENU ------------------- */
+
+.fondo-navbar{
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: +1;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.categorias-menu{
+  margin-top: 70px;
+}
+
+.atajos{
+  margin-top: 70px;
+  height: 30px;
+  width: 800px;
+  color:white;
+}
+
+.atajos ul li a{
+  color: white;
+  background-color: rgb(209, 143, 0);
+  border-radius: 30px;
+  padding: 5px 10px;
+  width:17%;
+}
